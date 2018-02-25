@@ -1,0 +1,96 @@
+html, body {
+	background-color: #ffffff ;
+	margin: 0px;
+	padding:0px;
+	
+}
+
+	#hardline {
+		background: #dc5552 url(../images/background.png) no-repeat center center;  
+	}
+
+	.manage-footer {
+		border-top: 1px solid #ebeae3 ;
+	}
+
+	.ui-icon {
+		background-color: transparent;
+		box-shadow: none;
+	}
+	
+	#loading, #success, #failure { text-shadow: none; color:#fff; border: 3px solid #fff; background-color: #dc5553;}
+	
+	.ui-input-text  {
+		color: #AAA;
+		text-shadow: none;
+	}
+	
+	h3 { color:#f7f6f1; }
+	p { color:#f7f6f1; }
+	h4 { color: #f7f6f1; }
+	h5 { color: #dc5552; }	
+	li h3 { color:#666; }
+	li p { color:#666; }
+
+	.ui-listview { margin-top:0!important }
+	
+	.ui-navbar {
+	}
+	
+	#message-area { height: 125px; }
+	
+	.block {
+		background:#f7f6f1 ;
+		padding:20px;
+		position: relative;
+		text-shadow: none;
+	}
+	
+		.block.comment {
+			border-top: 5px solid #eeece1;
+		}
+		
+		.block.comment.avalanche {
+			border-top: 5px solid #d5d1be;
+			background:#e7e5d9 ;
+		}
+	
+		.block span {		
+			position:absolute;
+			top: 20px;
+			left:20px;
+			font-size:0.7em;
+			color:#ccc;
+		}
+		
+			.block.comment.avalanche span {
+				color: #666;
+				font-style: italic ;
+			}
+		
+	
+		.block h1 {
+			color: #dc5553 ;
+			font-family: Georgia ;
+			font-weight: normal ;
+			font-size:2.5em ;
+			margin-bottom: 0px;
+		}
+		
+		.block p {
+			color: #666;
+			margin-bottom: 0px;
+		}
+		
+		.block.comment p {
+			color: #ccc;
+			font-style: italic ;
+		}
+		
+			.block.comment.avalanche p {
+				color: #333;
+			}
+	
+
+		
+		

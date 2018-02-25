@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<title>Avalanche Hardline</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/datejs.js"></script>
+		<script src="jquerymobile/jquery.mobile-1.3.0.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
+		<script src="js/hardline.js"></script>
+	
+		<link rel="stylesheet" href="jquerymobile/jquery.mobile.structure-1.3.0.css" />
+		<link rel="stylesheet" href="themes/hardline.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+	</head>
+	  
+	<body> 		
+	
+		<div data-role="page" id="hardline" data-title="Hardline" data-url="hardline" data-theme="a">
+		
+			<div data-role="header" data-position="fixed" class="appheader" data-theme="a">
+				<h1>Welcome</h1>
+				<a href="#" data-iconpos="notext" data-icon="home" id="button-home" data-theme="a">Home</a>
+				<a href="#" onclick="" data-icon="refresh" data-iconpos="notext" id="button-manage" data-theme="a">Refresh</a>
+			</div>
+			
+			<div data-role="content">
+			
+				<!-- manage -->
+				
+				<div id="manage">
+					<ul id="list" class="touch" data-role="listview" data-icon="true" data-split-icon="delete" data-inset="true" data-autodividers="false" data-theme="a"></ul>
+				</div>
+				
+				<!-- add -->
+				
+				<div id="add">
+					<h3>Send a message via Hardline</h3>
+					<p>Send us a message about anything. It's like our bat signal.</p>
+					<input type="text" name="text-basic" id="message-title" value="Topic" onClick="this.value=''" onBlur="if(this.value==''){this.value='Topic';}">
+					<textarea cols="40" rows="10" name="textarea" id="message-area" onClick="this.value=''" onBlur="if(this.value==''){this.value='Message';}">Message</textarea>
+					<a href="#" data-rel="close" data-role="button" data-icon="star" id="message-send" data-theme="a">Create Message</a>
+				</div>
+				
+				<!-- settings -->
+				
+				<div id="settings">
+					<h3>Set up your account</h3>
+					<div id="settings-data"></div>
+					<a href="#manage" data-rel="close" data-role="button"  data-icon="star" id="button-settings-save" data-theme="a">Save</a>
+				</div>
+				
+				<!-- view -->
+				
+				<div id="view">
+					<a href="#" data-rel="close" data-role="button"  data-icon="alert" data-theme="e" id="button-solve">Mark as solved</a>
+					<div id="data"></div>
+					<textarea cols="40" rows="10" name="textarea" id="comment-area" onClick="this.value=''" onBlur="if(this.value==''){this.value='Comment';}">Comment</textarea>
+					<a href="#" data-rel="close" data-role="button" data-icon="star" id="comment-send" data-theme="a">Add Comment</a>
+				</div>
+				
+				<!-- help -->
+				
+				<div id="help">
+					<h2>Welcome to Avalanche Hardline.</h2>
+					<p>
+						We know how frustrating it is to find contact details or open massive mail clients just to quickly follow up on that project. 
+						It's why we made Hardline: to make getting hold of us, as easy as opening an app on your smartphone. 
+					</p>
+					<p> 
+						Let us run you through the process.
+					</p>
+					<h3>Add a new message</h3>
+					<p>
+						On the bottom left side of the screen you'll see the "Add" button. Click it, fill in the message form and click "Create Message". It's that easy.
+					</p>
+					<h3>Managing messages</h3>
+					<p>
+						This is where it gets nifty. Click on "Manage" (next to the "Add" button). There will be a list of all the messages you've sent us. 
+						To the right you'll see a small number - this will indicate how many comments each message has. Click on a message to view it.
+					</p>
+					<h3>Viewing messages</h3>
+					<p>
+						You'll now see a nice big overview of your message. You'll also see a space where you can leave comments for us - we can then also
+						leave comments for you on that same message. Don't worry, ours will look slighty darker so that you can easily see our replies.
+					</p>
+					<p>
+						You'll be able to then mark the message as solved by clicking the "Mark as solved" button at the top. This will remove the message from 
+						the list so that your phone doesn't get cluttered with old queries.
+					</p>
+					<h3>Settings</h3>
+					<p>
+						Any personal & contact details you can save by clicking on the "Settings" button and filling out the form. 
+						It will help us get a hold of you if we need to. If you prefer not to have those details - we're okay with that too. :)						
+					</p>
+					<h2>Alphas & Betas.</h2>
+					<p>
+						Hardline if new, so we're busy improving a lot of the app to make it even better and more effective.
+					</p>
+				</div>
+			
+			</div>			
+			
+			<div id="confirm" class="ui-content" data-role="popup" data-theme="a">
+				<p id="question">Are you sure you want to delete</p>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a id="yes" data-role="button" data-mini="true" data-shadow="false" data-rel="back" data-theme="a">Yes</a>
+					</div>
+					<div class="ui-block-b">
+						<a id="cancel" data-role="button" data-mini="true" data-shadow="false" data-rel="back" data-theme="a">Cancel</a>
+					</div>
+				</div>
+			</div>
+			
+			<div id="loading" class="ui-content" data-role="popup" data-theme="a"><h4>Loading ...</h4></div>
+			<div id="success" class="ui-content" data-role="popup" data-theme="a"><h4>Success!</h4></div>
+			<div id="failure" class="ui-content" data-role="popup" data-theme="a"><h4>Sorry, failed!</h4></div>
+			
+			<div data-role="footer" data-id="foo1" data-position="fixed" class="manage-footer" data-theme="a">
+				<div data-role="navbar" class="trigger-nav">
+					<ul>
+						<li><a href="#add" data-icon="plus" id="button-add" data-theme="a">Add</a></li>						
+						<li><a href="#manage" data-icon="grid" id="button-manage" data-theme="a">Manage</a></li>
+						<li><a href="#settings" data-icon="gear" id="button-settings" data-theme="a">Settings</a></li>
+						<li><a href="#help" data-icon="info" id="button-help" data-theme="a">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+        <script type="text/javascript" src="cordova-2.5.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+		
+	
+		
+		
+	</body>
+	
+</html> 

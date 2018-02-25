@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/splash.png",
+        "source": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/src/main/res/drawable-mdpi/splash.png"
+    },
+    {
+        "merged": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/icon.png",
+        "source": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/src/main/res/drawable-mdpi/icon.png"
+    },
+    {
+        "merged": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]

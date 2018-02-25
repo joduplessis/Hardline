@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/build/intermediates/res/merged/debug/drawable/icon.png",
+        "source": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/src/main/res/drawable/icon.png"
+    },
+    {
+        "merged": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/build/intermediates/res/merged/debug/drawable/splash.png",
+        "source": "/Users/joduplessis/Sites/HardlineAndroidStudio/app/src/main/res/drawable/splash.png"
+    }
+]
